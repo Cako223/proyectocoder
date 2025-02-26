@@ -69,13 +69,43 @@ font-size: 60px;
 
 
 /*cambios productos*/
+.bodyproductos{
+    background-color: rgb(228, 6, 180);
+}
 .nuestrosproductos{
     font-size: 60px;
     text-align: center;
-    background-color: rgb(7, 228, 62);
+    
 }
-.calzado2{
-    font-size: 35px;
+.nuestrosproductos:hover{
+    color: blue;
+}
+.texto-img{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow:  10px 3px 8px black;
+    width: 180px;
+    margin: 5px;
+    border-radius: 10px 0px 10px;
+}
+.texto-img:hover{
+    color: white;
+}
+.img-productos{
+    display: grid;
+    grid-template-columns: repeat(minmax(min(500px,1fr)));
+    width: 80%;
+    gap: 10px;
+    padding: 10px;
+    outline: 5px solid red;
+    justify-content: center;
+
+}
+.img-productos .imagenes{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 
