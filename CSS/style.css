@@ -36,15 +36,20 @@ li{
     display: inline-block;
 }
 .nav-inicio{
-    color: red;
+    color:aqua;
 }
 .menu-color{
-    color: rebeccapurple;
+    color: rgb(255, 255, 255);
     font-size: 35px;
+    box-shadow: 10px 10px 10px black;
 }
-.btn-close{
-    font-size:25px;
+.boton-cerrar{
+    font-size:30px;
     color: red;
+    border: none;
+    margin-left: 30px;
+    background: none;
+    font-weight: bold;
 }
 .nav-opciones{
     color: greenyellow;
@@ -54,7 +59,12 @@ font-size: 60px;
 .navbar-toggler{
     color: red;
 }
-
+.container-fluid{
+    background-color: rgb(15, 155, 180);
+}
+.barra-menu{
+    background-color: rgb(170, 13, 175);
+}
 
 
 
