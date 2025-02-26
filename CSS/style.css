@@ -12,6 +12,7 @@ nav{
     margin: 0px;
     display: inline;
     justify-content: center;
+    position: sticky;
 }
 ul{
     list-style: none;
@@ -22,7 +23,7 @@ ul{
     background-image: url(../imagenes/principal.png);
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 700px;
     width: 100%;
     color:red;
     text-align: center;
@@ -69,8 +70,13 @@ font-size: 60px;
 
 
 /*cambios productos*/
+nav.nav-p{
+    display: flex;
+    background-color: rgb(6, 175, 175);
+}
+    
 .bodyproductos{
-    background-color: rgb(228, 6, 180);
+    background-color: rgb(219, 213, 218);
 }
 .nuestrosproductos{
     font-size: 60px;
@@ -100,6 +106,7 @@ font-size: 60px;
     padding: 10px;
     outline: 5px solid red;
     justify-content: center;
+    background-color: violet;
 
 }
 .img-productos .imagenes{
@@ -117,6 +124,10 @@ font-size: 60px;
 
 
 /*cambios en contacto*/
+.nav-ct{
+    display: flex;
+    justify-content: center;
+}
 input{
     display: flex;
     text-align: start;
@@ -124,17 +135,19 @@ input{
 .img{
     width: 100%;
     height: 500px;
+    object-fit: cover;
     }
 .redes{
     height: 150px;
-    width: 150px;
+    width: 80%px;
     display: flex;
     display: inline;
     padding: 120px;
-    margin-bottom: -75px;
-    margin-top: -75px;
+    gap: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
     margin-left: 50px;
-    
+    box-shadow: 10px 0px 5px grey;
 }
 .contacto1{
     width: 100%;
@@ -143,11 +156,20 @@ input{
     text-align: center;
     font-size: 50px;
     font-weight: bold;
+    padding-top: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.contactanos:hover{
+    color: red;
 }
 .datos{
     display: flex;
     width: 200px;
     height: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 15px;
+    box-shadow: 5px 0px 7px pink;
 }
 .copycontacto{
     text-align: start;
@@ -155,13 +177,15 @@ input{
 textarea{
     width: 350px;
     height: 150px;
-    border-radius: 15px;
+    border-radius: 35px;
     border-style:ridge;
     border-color: blueviolet;
     padding: 15px;
     margin: 7px;
-    border-style: solid;   
+    border-style: 50px solid;   
     display: flex;
+    font-size: 30px;
+    box-shadow: 5px 0px 10px violet;
 }
 
 
