@@ -4,6 +4,7 @@
 a{
     text-decoration: none;
     color: aqua;
+    box-shadow: 0px 5px 8px rgb(54, 7, 223);
 }
 nav{
     background-color: rgb(5, 5, 5);
@@ -56,12 +57,14 @@ li{
     color: greenyellow;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 60px;
+box-shadow: 8px 8px 8px black;
 }
 .navbar-toggler{
     color: red;
 }
 .container-fluid{
     background-color: rgb(15, 155, 180);
+    font-size: 45px;
 }
 .barra-menu{
     background-color: rgb(170, 13, 175);
@@ -73,6 +76,7 @@ font-size: 60px;
 nav.nav-p{
     display: flex;
     background-color: rgb(6, 175, 175);
+    font-size: 35px;
 }
     
 .bodyproductos{
@@ -124,9 +128,14 @@ nav.nav-p{
 
 
 /*cambios en contacto*/
+.bodycontacto{
+    background-color:rgb(236, 234, 234);
+}
 .nav-ct{
     display: flex;
     justify-content: center;
+    font-size: 35px;
+    position:static;
 }
 input{
     display: flex;
@@ -140,8 +149,7 @@ input{
 .redes{
     height: 150px;
     width: 80%px;
-    display: flex;
-    display: inline;
+    display: inline-flex;
     padding: 120px;
     gap: 25px;
     padding-bottom: 25px;
@@ -187,58 +195,110 @@ textarea{
     font-size: 30px;
     box-shadow: 5px 0px 10px violet;
 }
+/*cambios faqs*/
 
+.preguntas{
+    text-align: center;
+}
 
 /*cambios nosotros*/
-.titulo2{
-    font-size: 100px;
-    text-align: center;
-    background-color: aquamarine;
-    font-style: normal;
-}
-.info{
-    font-size: 35px;
-}
-.subtitulo2{
-    font-size: 50px;
-    text-align: center;
-}
-.text4{
-    text-align: end;
-    margin:-35px;
-}
-.text5{
-    text-align: center;
-    margin: 100px;
-}
 
 
 
 
-/* cambios faqs*/
-.preguntas{
-    font-size: 100px;
-    text-align: center;
-    background-color: orange;
+
+
+
+
+
+
+
+
+
+/*cambios  nosotros*/
+.nav-n{
+    font-size: 25px;
 }
-.p{
-    font-size: 35px;
-    font-weight: bold;
+.somos-m:hover{
+    color: whitesmoke;
 }
-.p2{
-    font-size: 35px;
-    font-weight: bolder;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin: top;
+.sub-m:hover{
+    color: rebeccapurple;
 }
-.copyfaq{
-    display: flex;
-    text-align: start;
+.text{
+    font-weight: 50vh;
 }
 
-.preguntas2{
-    width: 50%;
-    height: 30px;
-    display: flex;
+
+
+/* cambios media query nosotros*/
+@media  screen and (max-height: 600px) {
+    
+    .somos-m{
+        background-color: greenyellow;
+        font-size: 45px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .texto{
+        text-align: center;
+        font-weight: bold;
+    }
+    .info{
+        font-size: 25px;
+        text-align: center;
+    }
+    .text{
+        font-size:20px ;
+        text-align: center;
+    }
+    .sub-m{
+        background-color: aquamarine;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .copyright{
+        margin-top: 80px;
+    }
 }
+
+/* cambios media query faqs*/
+@media  screen and (max-height: 720px) {
+    body{
+        background-color: rgb(238, 121, 26);
+        
+    }
+    nav{
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .preguntas{
+        font-size: 50px;
+        background-color: aquamarine;
+    }
+    .p{
+        font-size: 25px;
+        text-align: center;
+    }
+    .p2{
+        font-size:20px ;
+        text-align: center;
+    }
+    .preguntas2{
+        width: 350px;
+        height: 35px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 3px;
+        border-radius: 35px;
+        border: 3px solid blueviolet;
+    }
+
+
+
+
+
+}
+
