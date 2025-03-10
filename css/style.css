@@ -1,6 +1,6 @@
 
 /* cambios en index*/
-/*.bodyprincipal{
+.bodyprincipal{
     background-color: red;
 }
 a{
@@ -38,7 +38,7 @@ li{
 
 
 /*cambios productos*/
-/*.nuestrosproductos{
+.nuestrosproductos{
     font-size: 60px;
     text-align: center;
     background-color: rgb(7, 228, 62);
@@ -56,7 +56,7 @@ li{
 
 
 /*cambios en contacto*/
-/*input{
+input{
     display: flex;
     text-align: start;
 }
@@ -105,7 +105,7 @@ textarea{
 
 
 /*cambios nosotros*/
-/*.titulo2{
+.titulo2{
     font-size: 100px;
     text-align: center;
     background-color: aquamarine;
@@ -131,7 +131,7 @@ textarea{
 
 
 /* cambios faqs*/
-./*preguntas{
+.preguntas{
     font-size: 100px;
     text-align: center;
     background-color: orange;
