@@ -1,6 +1,6 @@
 /* cambios en index*/
 .bodyprincipal {
-  background-color: black;
+  background: linear-gradient(to top, #dbd8d8, #9b077b);
 }
 
 nav {
@@ -17,7 +17,8 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: aqua;
+  color: rgb(7, 7, 7);
+  font-weight: bold;
 }
 
 .footer-i {
@@ -33,26 +34,37 @@ nav ul li a {
 }
 
 .offcanvas-header {
-  background-color: black;
+  background-color: rgb(64, 174, 238);
+  font-size: 35px;
 }
 
 .offcanvas {
-  background-color: grey;
+  background: linear-gradient(to top, #e053ce, #9930ee);
   box-shadow: 0pc 7px 5px white;
 }
 
-.btn-close {
+.btn-x {
   font-size: 35px;
   color: red;
 }
 
-.btn-close:hover {
+.btn-x:hover {
   color: white;
 }
 
 .offcanvas-title {
   color: white;
   box-shadow: 0px 4px 10px rgb(220, 22, 247);
+  font-weight: bold;
+}
+
+.pro-c {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.pro-c:hover {
+  color: red;
 }
 
 /*cambios productos*/

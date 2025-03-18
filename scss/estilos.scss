@@ -1,10 +1,11 @@
 /* cambios en index*/
 $font-size: 35px;
 $text-aling:center;
+$font-weigth: bold;
 
 
 .bodyprincipal{
-    background-color: black;
+    background: linear-gradient(to top, #dbd8d8, #9b077b);     
 }
 nav{ 
     font-style: italic;
@@ -16,7 +17,8 @@ nav{
         li{
             a{
                 text-decoration: none;
-                color: aqua;
+                color: rgb(7, 7, 7);
+                font-weight: bold;
             }
             display: inline;
         }
@@ -36,24 +38,32 @@ nav{
     }
 
 .offcanvas-header{
-    background-color: black;
+    background-color: rgb(64, 174, 238);
+    font-size: $font-size;
 }
 .offcanvas{
-    background-color: grey;
+    background: linear-gradient(to top, #e053ce, #9930ee); 
     box-shadow: 0pc 7px 5px white;
 }
-.btn-close{
+.btn-x{
     font-size: $font-size;
     color: red;
 }
-.btn-close:hover{
+.btn-x:hover{
     color: white;
 }
 .offcanvas-title{
     color: white;
     box-shadow: 0px 4px 10px rgb(220, 22, 247);
+    font-weight: $font-weigth;
 }
-
+.pro-c{
+    font-size: $font-size;
+    font-weight: $font-weigth;
+}
+.pro-c:hover{
+    color: red;
+}
 /*cambios productos*/
 .nuestrosproductos{
     font-size: 60px;
@@ -89,7 +99,7 @@ input{
 .contactanos{
     text-align: $text-aling;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: $font-weigth;
 }
 .datos{
     display: flex;
@@ -140,7 +150,7 @@ textarea{
 }
 .p{
     font-size: $font-size;
-    font-weight: bold;
+    font-weight: $font-weigth;
 }
 .p2{
     font-size: $font-size;
