@@ -1,6 +1,6 @@
 
 /* cambios en index*/
-.bodyprincipal{
+/*.bodyprincipal{
     background-color: red;
 }
 a{
@@ -33,12 +33,12 @@ ul{
 }
 li{
     display: inline-block;
-}
+}/*
 
 
 
 /*cambios productos*/
-.nuestrosproductos{
+/*.nuestrosproductos{
     font-size: 60px;
     text-align: center;
     background-color: rgb(7, 228, 62);
@@ -56,7 +56,7 @@ li{
 
 
 /*cambios en contacto*/
-input{
+/*input{
     display: flex;
     text-align: start;
 }
@@ -101,11 +101,11 @@ textarea{
     margin: 7px;
     border-style: solid;   
     display: flex;
-}
+}/*
 
 
 /*cambios nosotros*/
-.titulo2{
+/*.titulo2{
     font-size: 100px;
     text-align: center;
     background-color: aquamarine;
@@ -125,13 +125,13 @@ textarea{
 .text5{
     text-align: center;
     margin: 100px;
-}
+}/*
 
 
 
 
 /* cambios faqs*/
-.preguntas{
+/*.preguntas{
     font-size: 100px;
     text-align: center;
     background-color: orange;
@@ -156,4 +156,4 @@ textarea{
     width: 50%;
     height: 30px;
     display: flex;
-}
+}/*
