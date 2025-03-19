@@ -3,19 +3,19 @@
   background: linear-gradient(to top, #dbd8d8, #9b077b);
 }
 
-nav {
+.navbar {
   font-style: italic;
   font-size: 35px;
   margin: 0px;
 }
-nav ul {
+.navbar ul {
   list-style: none;
   text-align: end;
 }
-nav ul li {
+.navbar ul li {
   display: inline;
 }
-nav ul li a {
+.navbar ul li a {
   text-decoration: none;
   color: rgb(7, 7, 7);
   font-weight: bold;
@@ -36,7 +36,6 @@ nav ul li a {
 .navbar-toggler {
   color: plum;
 }
-
 .navbar-toggler:hover {
   color: rebeccapurple;
 }
@@ -70,14 +69,57 @@ nav ul li a {
 }
 
 /*cambios productos*/
+.bodyproductos {
+  background: linear-gradient(to top, #58ebf0, #f4f6f7);
+}
+
+#opciones {
+  background-color: black;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding: 15px;
+}
+#opciones ul {
+  list-style: none;
+  text-align: end;
+  display: flex;
+  justify-content: space-around;
+}
+#opciones li a {
+  text-decoration: none;
+  position: sticky;
+  color: #9930ee;
+  border: #083233 solid;
+  border-radius: 15px;
+  transition: all 2s ease-in-out;
+}
+#opciones li a:hover {
+  color: #58ebf0;
+}
+
 .nuestrosproductos {
   font-size: 60px;
   text-align: center;
   background-color: rgb(7, 228, 62);
 }
 
-.calzado2 {
+.parrafo {
   font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.img-g {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  padding: 10px;
+  object-fit: cover;
+  position: relative;
+  width: 450px;
+  height: 250px;
+  gap: 0px;
 }
 
 /*cambios en contacto*/
@@ -190,6 +232,23 @@ textarea {
   width: 50%;
   height: 30px;
   display: flex;
+}
+
+@media (min-width: 720px) {
+  #opciones {
+    font-display: initial;
+  }
+  #opciones li a {
+    text-decoration: none;
+    position: sticky;
+    color: #9930ee;
+    border: #083233 solid;
+    border-radius: 15px;
+    transition: all 2s ease-in-out;
+  }
+  #opciones li a:hover {
+    color: #58ebf0;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
