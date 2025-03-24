@@ -2,25 +2,30 @@
 $font-size: 35px;
 $text-aling: center;
 $font-weigth: bold;
+@mixin text($f-size,$t-aling,$f-wetigth){
+  font-size: $f-size;
+  text-align: $t-aling;
+  font-weight: $f-wetigth;
+}
 @mixin img($ancho, $alto, $espacio) {
   width: $ancho;
   height: $alto;
   gap: $espacio;
 }
-@mixin enlaces{
-    a{
-     text-decoration: none;
-     position: sticky;
-     color: #9930ee;
-     border:#083233 solid;
-     border-radius: 15px;
-     transition: all 2s ease-in-out;
-     &:hover{
-  color: #58ebf0;
+@mixin enlaces {
+  a {
+    text-decoration: none;
+    position: sticky;
+    color: #9930ee;
+    border: #083233 solid;
+    border-radius: 15px;
+    transition: all 2s ease-in-out;
+    &:hover {
+      color: #58ebf0;
     }
   }
 }
-@mixin border($b-radius,$b-color,$b-style){
+@mixin border($b-radius, $b-color, $b-style) {
   border-radius: $b-radius;
   border-color: $b-color;
   border-style: $b-style;
@@ -58,7 +63,7 @@ $font-weigth: bold;
 }
 .navbar-toggler {
   color: plum;
-  &:hover{
+  &:hover {
     color: rebeccapurple;
   }
 }
@@ -91,7 +96,7 @@ $font-weigth: bold;
 }
 
 #opciones {
-    background-color: black;
+  background-color: black;
   font-size: 30px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -106,7 +111,6 @@ $font-weigth: bold;
   li {
     @include enlaces;
   }
-  
 }
 .nuestrosproductos {
   font-size: 60px;
@@ -118,18 +122,20 @@ $font-weigth: bold;
   text-align: $text-aling;
   font-weight: $font-weigth;
 }
-.img-g{
-    margin:auto;
-    display: grid;
-    grid-template-columns: repeat(3,200px);
-    padding: 10px;
-    object-fit: cover;
-    position: relative;
-    @include img(450px,250px,0px);
-     
+.img-g {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  padding: 10px;
+  object-fit: cover;
+  position: relative;
+  @include img(450px, 250px, 0px);
 }
 /*cambios en contacto*/
-.navbar-cont{
+.bodycontacto{
+  background: linear-gradient(to top, #153781d8, #44bbf7,#ffffff);
+}
+.navbar-cont {
   background-color: black;
   font-size: 30px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -142,7 +148,7 @@ $font-weigth: bold;
     display: flex;
     justify-content: space-around;
   }
-  li{
+  li {
     @include enlaces();
   }
 }
@@ -159,9 +165,8 @@ input {
   object-fit: cover;
   margin-left: 300px;
   margin-bottom: 15px;
-  @include img(80px,100px,0px);
+  @include img(80px, 100px, 0px);
   box-shadow: 0px 5px 7px grey;
-   
 }
 .contacto1 {
   width: 100%;
@@ -175,6 +180,9 @@ input {
   display: flex;
   width: 200px;
   height: 20px;
+  border: 2px;
+  padding: 5px;
+  @include border(10px,rgb(230, 51, 236), solid);
 }
 .copycontacto {
   text-align: start;
@@ -184,29 +192,68 @@ textarea {
   height: 150px;
   padding: 15px;
   margin: 7px;
-  @include border(15px,blueviolet,solid)
+  border: 2px;
+  @include border(25px, rgb(247, 33, 157), solid);
 }
 /*cambios nosotros*/
+.bodynosotros{
+  background: linear-gradient(to top, #153781d8, #44bbf7,#ffffff);
+}
+.nav-nosotros {
+  background-color: black;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: $font-weigth;
+  padding: 15px;
+  ul {
+    list-style: none;
+    text-align: end;
+    display: flex;
+    justify-content: space-around;
+  }
+  li {
+    @include enlaces();
+  }
+}
 .titulo2 {
   font-size: 100px;
   text-align: $text-aling;
-  background-color: aquamari;
-  font-style: normal;
+  background-color: rgba(235, 17, 17, 0.397);
+  font-weight: $font-weigth;
 }
 .info {
   font-size: $font-size;
+  text-align: $text-aling;
+  font-style: $font-weigth;
 }
 .subtitulo2 {
   font-size: 50px;
   text-align: $text-aling;
 }
+.texto {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: $text-aling;
+  font-weight: $font-weigth;
+  font-size: 25px;
+}
+.text2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: $text-aling;
+  font-weight: $font-weigth;
+}
+.text3{
+  @include text(30px,$text-aling,$font-weigth);
+  margin-left: 5px;
+  
+}
 .text4 {
-  text-align: end;
-  margin: -35px;
+  @include text(27px,$text-aling, $font-weigth);
+  margin-top: 15px;
 }
 .text5 {
-  text-align: $text-aling;
-  margin: 100px;
+  @include text(25px,$text-aling,$font-weigth)
 }
 /* cambios faqs*/
 .preguntas {
@@ -236,18 +283,11 @@ textarea {
   display: flex;
 }
 
-
-
-
-
-
-@media (min-width:720px){
-    #opciones{
-        font-display: initial;
-        li{
-            @include enlaces(
-
-            );
-        }
+@media (min-width: 720px) {
+  #opciones {
+    font-display: initial;
+    li {
+      @include enlaces();
     }
+  }
 }

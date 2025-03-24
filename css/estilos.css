@@ -123,6 +123,10 @@
 }
 
 /*cambios en contacto*/
+.bodycontacto {
+  background: linear-gradient(to top, rgba(21, 55, 129, 0.8470588235), #44bbf7, #ffffff);
+}
+
 .navbar-cont {
   background-color: black;
   font-size: 30px;
@@ -183,6 +187,11 @@ input {
   display: flex;
   width: 200px;
   height: 20px;
+  border: 2px;
+  padding: 5px;
+  border-radius: 10px;
+  border-color: rgb(230, 51, 236);
+  border-style: solid;
 }
 
 .copycontacto {
@@ -194,21 +203,53 @@ textarea {
   height: 150px;
   padding: 15px;
   margin: 7px;
-  border-radius: 15px;
-  border-color: blueviolet;
+  border: 2px;
+  border-radius: 25px;
+  border-color: rgb(247, 33, 157);
   border-style: solid;
 }
 
 /*cambios nosotros*/
+.bodynosotros {
+  background: linear-gradient(to top, rgba(21, 55, 129, 0.8470588235), #44bbf7, #ffffff);
+}
+
+.nav-nosotros {
+  background-color: black;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding: 15px;
+}
+.nav-nosotros ul {
+  list-style: none;
+  text-align: end;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-nosotros li a {
+  text-decoration: none;
+  position: sticky;
+  color: #9930ee;
+  border: #083233 solid;
+  border-radius: 15px;
+  transition: all 2s ease-in-out;
+}
+.nav-nosotros li a:hover {
+  color: #58ebf0;
+}
+
 .titulo2 {
   font-size: 100px;
   text-align: center;
-  background-color: aquamari;
-  font-style: normal;
+  background-color: rgba(235, 17, 17, 0.397);
+  font-weight: bold;
 }
 
 .info {
   font-size: 35px;
+  text-align: center;
+  font-style: bold;
 }
 
 .subtitulo2 {
@@ -216,14 +257,38 @@ textarea {
   text-align: center;
 }
 
+.texto {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.text2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.text3 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
 .text4 {
-  text-align: end;
-  margin: -35px;
+  font-size: 27px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
 .text5 {
+  font-size: 25px;
   text-align: center;
-  margin: 100px;
+  font-weight: bold;
 }
 
 /* cambios faqs*/
