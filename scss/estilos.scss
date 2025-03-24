@@ -198,10 +198,6 @@ textarea {
 #consulta{
   font-weight: $font-weigth;
   font-size: 20px;
-  &::placeholder{
-    font-weight: $font-weigth;
-    color: greenyellow;
-  }
 }
 
 /*cambios nosotros*/
@@ -286,6 +282,7 @@ textarea {
   }
 }
 .preguntas {
+  margin: 0px;
   font-size: 100px;
   font-family: 'Times New Roman', Times, serif;
   text-align: $text-aling;
