@@ -2,7 +2,7 @@
 $font-size: 35px;
 $text-aling: center;
 $font-weigth: bold;
-@mixin text($f-size,$t-aling,$f-wetigth){
+@mixin text($f-size, $t-aling, $f-wetigth) {
   font-size: $f-size;
   text-align: $t-aling;
   font-weight: $f-wetigth;
@@ -132,8 +132,8 @@ $font-weigth: bold;
   @include img(450px, 250px, 0px);
 }
 /*cambios en contacto*/
-.bodycontacto{
-  background: linear-gradient(to top, #153781d8, #44bbf7,#ffffff);
+.bodycontacto {
+  background: linear-gradient(to top, #153781d8, #44bbf7, #ffffff);
 }
 .navbar-cont {
   background-color: black;
@@ -182,7 +182,7 @@ input {
   height: 20px;
   border: 2px;
   padding: 5px;
-  @include border(10px,rgb(230, 51, 236), solid);
+  @include border(10px, rgb(230, 51, 236), solid);
 }
 .copycontacto {
   text-align: start;
@@ -195,9 +195,18 @@ textarea {
   border: 2px;
   @include border(25px, rgb(247, 33, 157), solid);
 }
+#consulta{
+  font-weight: $font-weigth;
+  font-size: 20px;
+  &::placeholder{
+    font-weight: $font-weigth;
+    color: greenyellow;
+  }
+}
+
 /*cambios nosotros*/
-.bodynosotros{
-  background: linear-gradient(to top, #153781d8, #44bbf7,#ffffff);
+.bodynosotros {
+  background: linear-gradient(to top, #153781d8, #44bbf7, #ffffff);
 }
 .nav-nosotros {
   background-color: black;
@@ -238,42 +247,66 @@ textarea {
   font-size: 25px;
 }
 .text2 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   text-align: $text-aling;
   font-weight: $font-weigth;
 }
-.text3{
-  @include text(30px,$text-aling,$font-weigth);
+.text3 {
+  @include text(30px, $text-aling, $font-weigth);
   margin-left: 5px;
-  
 }
 .text4 {
-  @include text(27px,$text-aling, $font-weigth);
+  @include text(27px, $text-aling, $font-weigth);
   margin-top: 15px;
 }
 .text5 {
-  @include text(25px,$text-aling,$font-weigth)
+  @include text(25px, $text-aling, $font-weigth);
 }
 /* cambios faqs*/
+.bodyfaq{
+  background: linear-gradient(to top, #153781d8, #44bbf7, #ffffff);
+
+}
+.nav-faqs {
+  background-color: black;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Sans Unicode",
+    Geneva, Verdana, sans-serif;
+  font-weight: $font-weigth;
+  padding: 15px;
+  ul {
+    list-style: none;
+    text-align: end;
+    display: flex;
+    justify-content: space-around;
+  }
+  li {
+    @include enlaces();
+  }
+}
 .preguntas {
   font-size: 100px;
+  font-family: 'Times New Roman', Times, serif;
   text-align: $text-aling;
-  background-color: orange;
+  background-color: rgb(29, 240, 212);
 }
 .p {
-  font-size: $font-size;
-  font-weight: $font-weigth;
+  @include text($font-size, $text-aling, $font-weigth);
 }
 .p2 {
-  font-size: $font-size;
-  font-weight: bolder;
-  margin-left: 300px;
-  margin-right: 300px;
-  margin: top;
+  @include text($font-size, $text-aling,$font-weigth)
+}
+.preguntas2{
+  border-radius: 7px;
+  padding: 15px;
+  @include text(20px, start,$font-weigth);
+  @extend .datos;
+  cursor: pointer;
+  
 }
 .copyfaq {
-  display: flex;
+  padding-top: 15px;
   text-align: start;
 }
 
@@ -290,4 +323,29 @@ textarea {
       @include enlaces();
     }
   }
+}
+
+
+@media (max-width:720px) {
+  .nav-faqs{
+    width: 100%;
+  }
+  .preguntas2{
+    width: 420px;
+  }
+  .preguntas{
+    background-color: #069092;
+    font-weight: $font-weigth;
+  }
+}
+
+@media (max-width:720px){
+  .redes{
+  @include img(80px,70px ,0px );
+  margin: 40px;
+  margin-left: 100px;
+ } 
+ .datos{
+  @include border(8px,rgba(238, 32, 25, 0.712),solid)
+ }
 }

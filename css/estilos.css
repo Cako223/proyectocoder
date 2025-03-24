@@ -183,7 +183,7 @@ input {
   font-weight: bold;
 }
 
-.datos {
+.datos, .preguntas2 {
   display: flex;
   width: 200px;
   height: 20px;
@@ -207,6 +207,15 @@ textarea {
   border-radius: 25px;
   border-color: rgb(247, 33, 157);
   border-style: solid;
+}
+
+#consulta {
+  font-weight: bold;
+  font-size: 20px;
+}
+#consulta::placeholder {
+  font-weight: bold;
+  color: greenyellow;
 }
 
 /*cambios nosotros*/
@@ -292,27 +301,65 @@ textarea {
 }
 
 /* cambios faqs*/
+.bodyfaq {
+  background: linear-gradient(to top, rgba(21, 55, 129, 0.8470588235), #44bbf7, #ffffff);
+}
+
+.nav-faqs {
+  background-color: black;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding: 15px;
+}
+.nav-faqs ul {
+  list-style: none;
+  text-align: end;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-faqs li a {
+  text-decoration: none;
+  position: sticky;
+  color: #9930ee;
+  border: #083233 solid;
+  border-radius: 15px;
+  transition: all 2s ease-in-out;
+}
+.nav-faqs li a:hover {
+  color: #58ebf0;
+}
+
 .preguntas {
   font-size: 100px;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
-  background-color: orange;
+  background-color: rgb(29, 240, 212);
 }
 
 .p {
   font-size: 35px;
+  text-align: center;
   font-weight: bold;
 }
 
 .p2 {
   font-size: 35px;
-  font-weight: bolder;
-  margin-left: 300px;
-  margin-right: 300px;
-  margin: top;
+  text-align: center;
+  font-weight: bold;
+}
+
+.preguntas2 {
+  border-radius: 7px;
+  padding: 15px;
+  font-size: 20px;
+  text-align: start;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .copyfaq {
-  display: flex;
+  padding-top: 15px;
   text-align: start;
 }
 
@@ -336,6 +383,32 @@ textarea {
   }
   #opciones li a:hover {
     color: #58ebf0;
+  }
+}
+@media (max-width: 720px) {
+  .nav-faqs {
+    width: 100%;
+  }
+  .preguntas2 {
+    width: 420px;
+  }
+  .preguntas {
+    background-color: #069092;
+    font-weight: bold;
+  }
+}
+@media (max-width: 720px) {
+  .redes {
+    width: 80px;
+    height: 70px;
+    gap: 0px;
+    margin: 40px;
+    margin-left: 100px;
+  }
+  .datos, .preguntas2 {
+    border-radius: 8px;
+    border-color: rgba(238, 32, 25, 0.712);
+    border-style: solid;
   }
 }
 
