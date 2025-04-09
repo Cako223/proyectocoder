@@ -313,7 +313,7 @@ textarea {
   display: flex;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 566px) {
   #opciones {
     font-display: initial;
     li {
@@ -323,7 +323,7 @@ textarea {
 }
 
 
-@media (max-width:720px) {
+@media (min-width:566px) {
   .preguntas2{
     width: 420px;
   }
@@ -335,7 +335,7 @@ textarea {
   }
 }
 
-@media (max-width:720px){
+@media (min-width:566px){
   .redes{
   @include img(80px,70px ,0px );
   margin: 40px;

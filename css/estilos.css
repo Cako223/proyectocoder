@@ -366,7 +366,7 @@ textarea {
   display: flex;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 566px) {
   #opciones {
     font-display: initial;
   }
@@ -382,7 +382,7 @@ textarea {
     color: #58ebf0;
   }
 }
-@media (max-width: 720px) {
+@media (min-width: 566px) {
   .preguntas2 {
     width: 420px;
   }
@@ -393,7 +393,7 @@ textarea {
     font-weight: bold;
   }
 }
-@media (max-width: 720px) {
+@media (min-width: 566px) {
   .redes {
     width: 80px;
     height: 70px;
