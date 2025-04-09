@@ -324,13 +324,12 @@ textarea {
 
 
 @media (max-width:720px) {
-  .nav-faqs{
-    width: 100%;
-  }
   .preguntas2{
     width: 420px;
   }
   .preguntas{
+    margin: 0px;
+    width: 100%;
     background-color: #069092;
     font-weight: $font-weigth;
   }

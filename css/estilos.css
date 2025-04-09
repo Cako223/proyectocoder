@@ -213,10 +213,6 @@ textarea {
   font-weight: bold;
   font-size: 20px;
 }
-#consulta::placeholder {
-  font-weight: bold;
-  color: greenyellow;
-}
 
 /*cambios nosotros*/
 .bodynosotros {
@@ -331,6 +327,7 @@ textarea {
 }
 
 .preguntas {
+  margin: 0px;
   font-size: 100px;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
@@ -386,13 +383,12 @@ textarea {
   }
 }
 @media (max-width: 720px) {
-  .nav-faqs {
-    width: 100%;
-  }
   .preguntas2 {
     width: 420px;
   }
   .preguntas {
+    margin: 0px;
+    width: 100%;
     background-color: #069092;
     font-weight: bold;
   }
